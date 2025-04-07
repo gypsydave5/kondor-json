@@ -746,28 +746,21 @@
 
 <span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span>
 
-<span class="kd">object</span><span class="w"> </span><span class="nc">PersonConverter</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">JConverterObject</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">()</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">int</span><span class="p">()</span>
+<span class="kd">object</span><span class="w"> </span><span class="nc">PersonConverter</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">JAny</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">name</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">int</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">age</span><span class="p">)</span>
 
 <span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">JsonNodeObject</span><span class="p">.</span><span class="nf">deserializeOrThrow</span><span class="p">():</span><span class="w"> </span><span class="n">Person</span><span class="w"> </span><span class="o">=</span>
 <span class="w">        </span><span class="n">Person</span><span class="p">(</span>
 <span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">name</span><span class="p">,</span>
 <span class="w">            </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">age</span>
 <span class="w">        </span><span class="p">)</span>
-
-<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">Person</span><span class="p">.</span><span class="nf">serialize</span><span class="p">():</span><span class="w"> </span><span class="n">JsonNodeObject</span><span class="w"> </span><span class="o">=</span>
-<span class="w">        </span><span class="n">jsonObj</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">name</span>
-<span class="w">            </span><span class="n">age</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">age</span>
-<span class="w">        </span><span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">)</span>
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">toJsonStr</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">fromJsonStr</span><span class="p">(</span><span class="n">json</span><span class="p">))</span>
+<span class="w">    </span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">fromJsonStr</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="whats-next">📌 What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
@@ -778,7 +771,6 @@
 <li>🔤 <a href="tiny-types/">Tiny Types (Value Objects)</a> – for handling object you want to represent as a string or number</li>
 <li>🔤 <a href="enums-and-sealed/">Enums and Sealed Classes</a> – for working with enums and sealed classes</li>
 <li>🛠 <a href="short-field-functions/">Field Functions</a> – helper functions for defining fields in Kondor converters</li>
-<li>🧳 <a href="sealed-classes.md">Sealed Classes and Polymorphic JSON</a> – handling polymorphic JSON with sealed classes</li>
 </ul>
 
 

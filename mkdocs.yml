@@ -9,9 +9,9 @@ nav:
   - Advanced:
       - Field Functions: short-field-functions.md
       - Flattening Nested Objects: flatten.md
-      - Versioning the JSON: versioned-converter.md
       - Tiny Types: tiny-types.md
       - Enums and Sealed Classes: enums-and-sealed.md
+      - Versioning the JSON: versioned-converter.md
   - API Reference: api-reference.md
   - FAQ: faq.md
 theme:

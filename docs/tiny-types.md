@@ -167,3 +167,14 @@ In addition to `JStringRepresentable`, Kondor provides similar helpers for other
 Each of these classes lets you define converters for tiny types by providing `cons` and `render` functions, just like `JStringRepresentable`.
 
 These are especially useful when working with domain primitives like `UserId`, `Price`, `Flag`, etc., that wrap core types while preserving type safety and clarity in your domain model.
+
+## 📌 What's Next?
+
+Explore more of Kondor’s features:
+
+- 💻 [Converters Overview](getting-started.md) – an overview understanding how to work with Kondor converters
+- 🔁 [Versioning the JSON](versioned-converter.md) – for evolving schemas
+- 🔤 [Tiny Types (Value Objects)](tiny-types.md) – for handling object you want to represent as a string or number
+- 🔤 [Enums and Sealed Classes](enums-and-sealed.md) – for working with enums and sealed classes
+- 🛠 [Field Functions](short-field-functions.md) – helper functions for defining fields in Kondor converters
+- 🧳 [Sealed Classes and Polymorphic JSON](sealed-classes.md) – handling polymorphic JSON with sealed classes

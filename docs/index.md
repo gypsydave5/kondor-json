@@ -48,5 +48,6 @@ fun main() {
 
 ## 📚 Next Steps
 - [Getting Started](getting-started.md)
-- [Versioned Converters](versioned-converter.md)
-- [API Reference](api-reference.md)
+- [Versioning the JSON](versioned-converter.md) – for evolving schemas
+- [Tiny Types (Value Objects)](tiny-types.md) – for handling object you want to represent as a string or number
+- [Enums and Sealed Classes](enums-and-sealed.md) – for working with enums and sealed classes

@@ -10,6 +10,7 @@ nav:
       - Versioning the JSON: versioned-converter.md
       - Tiny Types: tiny-types.md
       - Enums and Sealed Classes: enums-and-sealed.md
+      - Field Functions: short-field-functions.md
   - API Reference: api-reference.md
   - FAQ: faq.md
 theme:

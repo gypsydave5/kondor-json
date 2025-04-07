@@ -1,0 +1,32 @@
+site_name: Kondor-JSON Documentation
+repo_url: https://github.com/uberto/kondor-json
+repo_name: kondor-json
+docs_dir: docs
+site_dir: site
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Advanced:
+      - Versioning the JSON: versioned-converter.md
+      - Tiny Types: tiny-types.md
+      - Enums and Sealed Classes: enums-and-sealed.md
+  - API Reference: api-reference.md
+  - FAQ: faq.md
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+markdown_extensions:
+  - codehilite
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - def_list
+  - pymdownx.extra
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences

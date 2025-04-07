@@ -9,20 +9,22 @@
       
       
       
+        <link rel="prev" href="../short-field-functions/">
       
-        <link rel="next" href="getting-started/">
+      
+        <link rel="next" href="../versioned-converter/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Kondor-JSON Documentation</title>
+        <title>Flattening Nested Objects - Kondor-JSON Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
       
 
@@ -41,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kondor-json" class="md-skip">
+        <a href="#unnesting-with-flatten" class="md-skip">
           Skip to content
         </a>
       
@@ -74,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Kondor-JSON Documentation" class="md-header__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
+    <a href=".." title="Kondor-JSON Documentation" class="md-header__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Flattening Nested Objects
             
           </span>
         </div>
@@ -179,11 +181,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -202,7 +202,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="getting-started/" class="md-tabs__link">
+      <a href="../getting-started/" class="md-tabs__link">
         
   
   
@@ -219,11 +219,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="short-field-functions/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../short-field-functions/" class="md-tabs__link">
           
   
   
@@ -241,7 +243,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="api-reference.md" class="md-tabs__link">
+      <a href="../api-reference.md" class="md-tabs__link">
         
   
   
@@ -260,7 +262,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="faq.md" class="md-tabs__link">
+      <a href="../faq.md" class="md-tabs__link">
         
   
   
@@ -295,7 +297,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Kondor-JSON Documentation" class="md-nav__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
+    <a href=".." title="Kondor-JSON Documentation" class="md-nav__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -322,6 +324,119 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../short-field-functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Field Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -339,7 +454,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Flattening Nested Objects
     
   </span>
   
@@ -347,12 +462,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Home
+    Flattening Nested Objects
     
   </span>
   
@@ -375,36 +490,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-kondor-json" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 What is Kondor-JSON?
+      How it works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-flattening-a-nested-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Flattening a Nested Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using flatten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Flatten
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 What's Next?
+      Summary
     </span>
   </a>
   
@@ -417,91 +547,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Getting Started
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Advanced
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Advanced
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="short-field-functions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Field Functions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -511,30 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="flatten/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Flattening Nested Objects
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="versioned-converter/" class="md-nav__link">
+      <a href="../versioned-converter/" class="md-nav__link">
         
   
   
@@ -557,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tiny-types/" class="md-nav__link">
+      <a href="../tiny-types/" class="md-nav__link">
         
   
   
@@ -580,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="enums-and-sealed/" class="md-nav__link">
+      <a href="../enums-and-sealed/" class="md-nav__link">
         
   
   
@@ -610,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api-reference.md" class="md-nav__link">
+      <a href="../api-reference.md" class="md-nav__link">
         
   
   
@@ -632,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="faq.md" class="md-nav__link">
+      <a href="../faq.md" class="md-nav__link">
         
   
   
@@ -674,36 +696,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-kondor-json" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 What is Kondor-JSON?
+      How it works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-flattening-a-nested-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Flattening a Nested Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using flatten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Flatten
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 What's Next?
+      Summary
     </span>
   </a>
   
@@ -728,58 +765,56 @@
   
 
 
-<h1 id="kondor-json">Kondor-JSON<a class="headerlink" href="#kondor-json" title="Permanent link">&para;</a></h1>
-<p>Welcome to <strong>Kondor-JSON</strong>, a Kotlin-first JSON serialization library that emphasizes type-safety, composability, and clarity.</p>
-<h2 id="what-is-kondor-json">🔍 What is Kondor-JSON?<a class="headerlink" href="#what-is-kondor-json" title="Permanent link">&para;</a></h2>
-<p>Kondor-JSON allows you to define type-safe, bidirectional mappings between your Kotlin data classes and JSON documents using a flexible DSL. It avoids reflection and favors a functional style to keep your data transformations explicit and testable.</p>
-<h2 id="features">🚀 Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Type-safe JSON serialization/deserialization</li>
-<li>Fully customizable converters</li>
-<li>Versioned converters for backward compatibility</li>
-<li>String representable support for enums and sealed classes</li>
-<li>No reflection, works in Kotlin Multiplatform</li>
-</ul>
-<h2 id="example">🛠️ Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nn">com.ubertob.kondor.json.*</span>
-<span class="k">import</span><span class="w"> </span><span class="nn">com.ubertob.kondor.json.jvalue.*</span>
-
-<span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span>
-
-<span class="kd">object</span><span class="w"> </span><span class="nc">PersonConverter</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">JConverterObject</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">()</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">int</span><span class="p">()</span>
-
-<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">JsonNodeObject</span><span class="p">.</span><span class="nf">deserializeOrThrow</span><span class="p">():</span><span class="w"> </span><span class="n">Person</span><span class="w"> </span><span class="o">=</span>
-<span class="w">        </span><span class="n">Person</span><span class="p">(</span>
-<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">name</span><span class="p">,</span>
-<span class="w">            </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">age</span>
-<span class="w">        </span><span class="p">)</span>
-
-<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">Person</span><span class="p">.</span><span class="nf">serialize</span><span class="p">():</span><span class="w"> </span><span class="n">JsonNodeObject</span><span class="w"> </span><span class="o">=</span>
-<span class="w">        </span><span class="n">jsonObj</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">name</span>
-<span class="w">            </span><span class="n">age</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">age</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">toJsonStr</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">fromJsonStr</span><span class="p">(</span><span class="n">json</span><span class="p">))</span>
+<h1 id="unnesting-with-flatten">Unnesting with <code>flatten</code><a class="headerlink" href="#unnesting-with-flatten" title="Permanent link">&para;</a></h1>
+<p>In Kondor, the <code>flatten</code> function allows you to flatten a nested data class (or Kotlin object) into a single-level JSON object. This function is particularly useful when you need to inline or "flatten" the fields of a nested object directly into the parent object’s JSON structure.</p>
+<h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<p>When you're working with a nested Kotlin data class, you may want to represent the fields of the nested class as part of the parent object's JSON. The <code>flatten</code> function allows you to achieve this in a concise way.</p>
+<p>Instead of having the nested object represented as a sub-object in the resulting JSON, the fields of the nested object will appear as top-level fields in the parent object.</p>
+<h3 id="example-flattening-a-nested-object">Example: Flattening a Nested Object<a class="headerlink" href="#example-flattening-a-nested-object" title="Permanent link">&para;</a></h3>
+<p>Consider the following Kotlin data classes:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Address</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">street</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">city</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">)</span>
+<span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">User</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">email</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">address</span><span class="p">:</span><span class="w"> </span><span class="n">Address</span><span class="p">)</span>
+</code></pre></div>
+<p>Without using <code>flatten</code>, the JSON for a <code>User</code> object might look like this:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john@example.com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;street&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123 Main St&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Somewhere&quot;</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="whats-next">📌 What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p>Explore more of Kondor’s features:</p>
+<p>But, by using <code>flatten</code>, you can inline the fields of the <code>Address</code> object directly into the parent <code>User</code> object.</p>
+<h3 id="using-flatten">Using <code>flatten</code><a class="headerlink" href="#using-flatten" title="Permanent link">&para;</a></h3>
+<p>Here’s how you can use <code>flatten</code> to flatten the <code>address</code> field:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">userConverter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JAny</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">    </span><span class="n">str</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="n">name</span><span class="p">)</span>
+<span class="w">    </span><span class="n">str</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="n">email</span><span class="p">)</span>
+<span class="w">    </span><span class="n">flatten</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="n">address</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">        </span><span class="n">str</span><span class="p">(</span><span class="n">Address</span><span class="o">::</span><span class="n">street</span><span class="p">)</span>
+<span class="w">        </span><span class="n">str</span><span class="p">(</span><span class="n">Address</span><span class="o">::</span><span class="n">city</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This will produce the following JSON representation:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john@example.com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;street&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123 Main St&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Somewhere&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>As you can see, the <code>address</code> field has been flattened into <code>street</code> and <code>city</code> fields at the top level of the JSON.</p>
+<h2 id="when-to-use-flatten">When to Use Flatten<a class="headerlink" href="#when-to-use-flatten" title="Permanent link">&para;</a></h2>
+<p>Flattening is useful when you want to simplify the structure of your JSON without nesting objects. It can also help make your API's JSON more readable and intuitive by avoiding unnecessary levels of nesting.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <ul>
-<li>💻 <a href="getting-started/">Converters Overview</a> – an overview understanding how to work with Kondor converters</li>
-<li>🔁 <a href="versioned-converter/">Versioning the JSON</a> – for evolving schemas</li>
-<li>🔤 <a href="tiny-types/">Tiny Types (Value Objects)</a> – for handling object you want to represent as a string or number</li>
-<li>🔤 <a href="enums-and-sealed/">Enums and Sealed Classes</a> – for working with enums and sealed classes</li>
-<li>🛠 <a href="short-field-functions/">Field Functions</a> – helper functions for defining fields in Kondor converters</li>
-<li>🧳 <a href="sealed-classes.md">Sealed Classes and Polymorphic JSON</a> – handling polymorphic JSON with sealed classes</li>
+<li>The <code>flatten</code> function allows you to flatten nested data classes into a single-level JSON object.</li>
+<li>It inlines the fields of a nested object directly into the parent object’s JSON structure.</li>
+<li>Flattening is useful when you want to simplify your JSON or avoid nested structures.</li>
 </ul>
+<p>In the next section, we’ll look at how to use <code>flatten</code> in combination with other Kondor functions to build complex converters.</p>
 
 
 
@@ -834,10 +869,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

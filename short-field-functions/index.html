@@ -9,20 +9,20 @@
       
       
       
+        <link rel="prev" href="../enums-and-sealed/">
       
-        <link rel="next" href="getting-started/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Kondor-JSON Documentation</title>
+        <title>Field Functions - Kondor-JSON Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
       
 
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kondor-json" class="md-skip">
+        <a href="#field-functions" class="md-skip">
           Skip to content
         </a>
       
@@ -74,7 +74,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Kondor-JSON Documentation" class="md-header__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
+    <a href=".." title="Kondor-JSON Documentation" class="md-header__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Field Functions
             
           </span>
         </div>
@@ -179,11 +179,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -202,7 +200,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="getting-started/" class="md-tabs__link">
+      <a href="../getting-started/" class="md-tabs__link">
         
   
   
@@ -219,11 +217,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="versioned-converter/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../versioned-converter/" class="md-tabs__link">
           
   
   
@@ -241,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="api-reference.md" class="md-tabs__link">
+      <a href="../api-reference.md" class="md-tabs__link">
         
   
   
@@ -260,7 +260,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="faq.md" class="md-tabs__link">
+      <a href="../faq.md" class="md-tabs__link">
         
   
   
@@ -295,7 +295,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Kondor-JSON Documentation" class="md-nav__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
+    <a href=".." title="Kondor-JSON Documentation" class="md-nav__button md-logo" aria-label="Kondor-JSON Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -322,32 +322,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -358,62 +336,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-kondor-json" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 What is Kondor-JSON?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 What's Next?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -425,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -444,24 +366,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -474,7 +401,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Advanced
@@ -488,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="versioned-converter/" class="md-nav__link">
+      <a href="../versioned-converter/" class="md-nav__link">
         
   
   
@@ -511,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tiny-types/" class="md-nav__link">
+      <a href="../tiny-types/" class="md-nav__link">
         
   
   
@@ -534,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="enums-and-sealed/" class="md-nav__link">
+      <a href="../enums-and-sealed/" class="md-nav__link">
         
   
   
@@ -554,10 +481,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="short-field-functions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Field Functions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -568,6 +517,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#str" class="md-nav__link">
+    <span class="md-ellipsis">
+      str
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#num" class="md-nav__link">
+    <span class="md-ellipsis">
+      num
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bool" class="md-nav__link">
+    <span class="md-ellipsis">
+      bool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    <span class="md-ellipsis">
+      array
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obj" class="md-nav__link">
+    <span class="md-ellipsis">
+      obj
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 What's Next?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -587,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api-reference.md" class="md-nav__link">
+      <a href="../api-reference.md" class="md-nav__link">
         
   
   
@@ -609,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="faq.md" class="md-nav__link">
+      <a href="../faq.md" class="md-nav__link">
         
   
   
@@ -651,27 +683,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-kondor-json" class="md-nav__link">
+  <a href="#str" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 What is Kondor-JSON?
+      str
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#num" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Features
+      num
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#bool" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ Example
+      bool
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    <span class="md-ellipsis">
+      array
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obj" class="md-nav__link">
+    <span class="md-ellipsis">
+      obj
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
     </span>
   </a>
   
@@ -705,56 +764,103 @@
   
 
 
-<h1 id="kondor-json">Kondor-JSON<a class="headerlink" href="#kondor-json" title="Permanent link">&para;</a></h1>
-<p>Welcome to <strong>Kondor-JSON</strong>, a Kotlin-first JSON serialization library that emphasizes type-safety, composability, and clarity.</p>
-<h2 id="what-is-kondor-json">🔍 What is Kondor-JSON?<a class="headerlink" href="#what-is-kondor-json" title="Permanent link">&para;</a></h2>
-<p>Kondor-JSON allows you to define type-safe, bidirectional mappings between your Kotlin data classes and JSON documents using a flexible DSL. It avoids reflection and favors a functional style to keep your data transformations explicit and testable.</p>
-<h2 id="features">🚀 Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Type-safe JSON serialization/deserialization</li>
-<li>Fully customizable converters</li>
-<li>Versioned converters for backward compatibility</li>
-<li>String representable support for enums and sealed classes</li>
-<li>No reflection, works in Kotlin Multiplatform</li>
-</ul>
-<h2 id="example">🛠️ Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nn">com.ubertob.kondor.json.*</span>
-<span class="k">import</span><span class="w"> </span><span class="nn">com.ubertob.kondor.json.jvalue.*</span>
-
-<span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span>
-
-<span class="kd">object</span><span class="w"> </span><span class="nc">PersonConverter</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">JConverterObject</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">()</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">int</span><span class="p">()</span>
-
-<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">JsonNodeObject</span><span class="p">.</span><span class="nf">deserializeOrThrow</span><span class="p">():</span><span class="w"> </span><span class="n">Person</span><span class="w"> </span><span class="o">=</span>
-<span class="w">        </span><span class="n">Person</span><span class="p">(</span>
-<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">name</span><span class="p">,</span>
-<span class="w">            </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">age</span>
-<span class="w">        </span><span class="p">)</span>
-
-<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">Person</span><span class="p">.</span><span class="nf">serialize</span><span class="p">():</span><span class="w"> </span><span class="n">JsonNodeObject</span><span class="w"> </span><span class="o">=</span>
-<span class="w">        </span><span class="n">jsonObj</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">name</span>
-<span class="w">            </span><span class="n">age</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nb">it</span><span class="p">.</span><span class="na">age</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">toJsonStr</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">fromJsonStr</span><span class="p">(</span><span class="n">json</span><span class="p">))</span>
-<span class="p">}</span>
+<h1 id="field-functions">Field Functions<a class="headerlink" href="#field-functions" title="Permanent link">&para;</a></h1>
+<p>When defining a converter in Kondor using <code>JAny</code>, you'll typically use one of a set of helper functions to define each field.</p>
+<p>These helper functions are named after the JSON type you're mapping to – like <code>str</code> for strings, <code>num</code> for numbers, and so on.</p>
+<p>Each function takes at least one argument: a property accessor (like <code>User::email</code>) that tells Kondor which field to serialize.</p>
+<p>Optionally, you can provide a converter as the first argument — for example, if you're wrapping a field in a tiny type or using a custom format. This gives you flexibility to encode domain-specific types or legacy formats cleanly.</p>
+<p>Here are the most commonly used field functions:</p>
+<hr />
+<h2 id="str"><code>str</code><a class="headerlink" href="#str" title="Permanent link">&para;</a></h2>
+<p>Use <code>str</code> to map a Kotlin <code>String</code> property to a JSON string field.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
+<p>If you're using a string-based tiny type (like <code>Email</code>), pass its converter in as the first argument:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">email</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">JEmail</span><span class="p">,</span><span class="w"> </span><span class="n">User</span><span class="o">::</span><span class="n">email</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="num"><code>num</code><a class="headerlink" href="#num" title="Permanent link">&para;</a></h2>
+<p>Use <code>num</code> to map numeric Kotlin types (<code>Int</code>, <code>Long</code>, <code>Double</code>, etc.) to JSON number fields.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">num</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">age</span><span class="p">)</span>
+</code></pre></div>
+<p>If you're wrapping numeric types in tiny types, pass a custom converter first:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">score</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">num</span><span class="p">(</span><span class="n">JScore</span><span class="p">,</span><span class="w"> </span><span class="n">Player</span><span class="o">::</span><span class="n">score</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="bool"><code>bool</code><a class="headerlink" href="#bool" title="Permanent link">&para;</a></h2>
+<p>Use <code>bool</code> to map a Kotlin <code>Boolean</code> property to a JSON boolean field.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">isActive</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">bool</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="n">isActive</span><span class="p">)</span>
+</code></pre></div>
+<p>You can pass in a converter if you've wrapped the boolean in a tiny type:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">termsAccepted</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">bool</span><span class="p">(</span><span class="n">JTermsAccepted</span><span class="p">,</span><span class="w"> </span><span class="n">SignupForm</span><span class="o">::</span><span class="n">termsAccepted</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="array"><code>array</code><a class="headerlink" href="#array" title="Permanent link">&para;</a></h2>
+<p>Use <code>array</code> to map collections (like <code>List</code> or <code>Set</code>) of other types to JSON arrays. You'll need to provide a converter for the element type.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">tags</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">array</span><span class="p">(</span><span class="n">JString</span><span class="p">,</span><span class="w"> </span><span class="n">Article</span><span class="o">::</span><span class="n">tags</span><span class="p">)</span>
+</code></pre></div>
+<p>This works for both <code>List&lt;T&gt;</code> and <code>Set&lt;T&gt;</code>.</p>
+<hr />
+<h2 id="obj"><code>obj</code><a class="headerlink" href="#obj" title="Permanent link">&para;</a></h2>
+<p>Finally, we use <code>obj</code> to map a property that is another object (i.e. a nested data class) to a JSON object field. You'll need to provide a converter for the nested type.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">address</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">obj</span><span class="p">(</span><span class="n">JAddress</span><span class="p">,</span><span class="w"> </span><span class="n">User</span><span class="o">::</span><span class="n">address</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<p>These field helper functions form the foundation of how you describe the structure of your JSON in Kondor. With just a few of these, you can map most of your data models clearly and concisely.</p>
+<p>There’s also one more field builder function available: <code>flatten</code>. This is used when you need to inline or "flatten" the fields of a nested object directly into the parent object’s JSON structure. We’ll look at how and when to use this in a separate part of the documentation.</p>
+<hr />
+<h2 id="summary-table">Summary Table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Kotlin Type</th>
+<th>JSON Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>str</code></td>
+<td><code>String</code></td>
+<td>string</td>
+<td>Direct string mapping. Use converter for wrapped types.</td>
+</tr>
+<tr>
+<td><code>num</code></td>
+<td><code>Int</code>, <code>Long</code>, <code>Double</code>, etc.</td>
+<td>number</td>
+<td>Supports all standard numeric types. Use converter for tiny types.</td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td><code>Boolean</code></td>
+<td>boolean</td>
+<td>Can wrap with custom converters.</td>
+</tr>
+<tr>
+<td><code>array</code></td>
+<td><code>List&lt;T&gt;</code>, <code>Set&lt;T&gt;</code></td>
+<td>array</td>
+<td>Requires an element converter. Supports both List and Set.</td>
+</tr>
+<tr>
+<td><code>obj</code></td>
+<td>nested object (data class)</td>
+<td>object</td>
+<td>Requires a converter for the object.</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="whats-next">📌 What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <p>Explore more of Kondor’s features:</p>
 <ul>
-<li>💻 <a href="getting-started/">Converters Overview</a> – an overview understanding how to work with Kondor converters</li>
-<li>🔁 <a href="versioned-converter/">Versioning the JSON</a> – for evolving schemas</li>
-<li>🔤 <a href="tiny-types/">Tiny Types (Value Objects)</a> – for handling object you want to represent as a string or number</li>
-<li>🔤 <a href="enums-and-sealed/">Enums and Sealed Classes</a> – for working with enums and sealed classes</li>
-<li>🛠 <a href="short-field-functions/">Field Functions</a> – helper functions for defining fields in Kondor converters</li>
+<li>💻 <a href="../getting-started/">Converters Overview</a> – an overview understanding how to work with Kondor converters</li>
+<li>🔁 <a href="../versioned-converter/">Versioning the JSON</a> – for evolving schemas</li>
+<li>🔤 <a href="../tiny-types/">Tiny Types (Value Objects)</a> – for handling object you want to represent as a string or number</li>
+<li>🔤 <a href="../enums-and-sealed/">Enums and Sealed Classes</a> – for working with enums and sealed classes</li>
+<li>🛠 <a href="./">Field Functions</a> – helper functions for defining fields in Kondor converters</li>
 <li>🧳 <a href="sealed-classes.md">Sealed Classes and Polymorphic JSON</a> – handling polymorphic JSON with sealed classes</li>
 </ul>
 
@@ -811,10 +917,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

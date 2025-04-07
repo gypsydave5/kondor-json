@@ -123,8 +123,9 @@ This line binds the value of the JSON `"name"` field (as defined by the delegate
 
 Once you're comfortable with this approach, explore more advanced features:
 
-- 🔁 [VersionedConverter](versioned-converter.md) – for evolving schemas
-- 🔤 [JStringRepresentable](jstring-representable.md) – for enums and string-based types
+- 🔁 [Versioning the JSON](versioned-converter.md) – for evolving schemas
+- 🔤 [Tiny Types (Value Objects)](tiny-types.md) – for handling object you want to represent as a string or number
+- 🔤 [Enums and Sealed Classes](enums-and-sealed.md) – for working with enums and sealed classes
 
 ---
 

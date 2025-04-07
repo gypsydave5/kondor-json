@@ -21,28 +21,21 @@ import com.ubertob.kondor.json.jvalue.*
 
 data class Person(val name: String, val age: Int)
 
-object PersonConverter : JConverterObject<Person>() {
-    private val name by str()
-    private val age by int()
+object PersonConverter : JAny<Person>() {
+    private val name by str(Person::name)
+    private val age by int(Person::age)
 
     override fun JsonNodeObject.deserializeOrThrow(): Person =
         Person(
             name = +name,
             age = +age
         )
-
-    override fun Person.serialize(): JsonNodeObject =
-        jsonObj {
-            name of it.name
-            age of it.age
-        }
 }
 
 fun main() {
     val person = Person("Alice", 30)
     val json = PersonConverter.toJsonStr(person)
-    println(json)
-    println(PersonConverter.fromJsonStr(json))
+    PersonConverter.fromJsonStr(json)
 }
 ```
 
@@ -55,4 +48,3 @@ Explore more of Kondor’s features:
 - 🔤 [Tiny Types (Value Objects)](tiny-types.md) – for handling object you want to represent as a string or number
 - 🔤 [Enums and Sealed Classes](enums-and-sealed.md) – for working with enums and sealed classes
 - 🛠 [Field Functions](short-field-functions.md) – helper functions for defining fields in Kondor converters
-- 🧳 [Sealed Classes and Polymorphic JSON](sealed-classes.md) – handling polymorphic JSON with sealed classes

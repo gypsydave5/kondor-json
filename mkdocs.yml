@@ -6,8 +6,10 @@ site_dir: site
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
+  - Basic Use:
+      - Adding Fields: short-field-functions.md
+      - Error Handling: outcome.md
   - Advanced:
-      - Field Functions: short-field-functions.md
       - Flattening Nested Objects: flatten.md
       - Tiny Types: tiny-types.md
       - Enums and Sealed Classes: enums-and-sealed.md

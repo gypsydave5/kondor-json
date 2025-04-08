@@ -34,8 +34,8 @@ object PersonConverter : JAny<Person>() {
 
 fun main() {
     val person = Person("Alice", 30)
-    val json = PersonConverter.toJsonStr(person)
-    PersonConverter.fromJsonStr(json)
+    val json = PersonConverter.toJson(person)
+    val samePerson = PersonConverter.fromJson(json).orThrow()
 }
 ```
 

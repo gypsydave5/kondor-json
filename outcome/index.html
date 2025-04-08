@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../short-field-functions/">
       
       
-        <link rel="next" href="../short-field-functions/">
+        <link rel="next" href="../flatten/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Getting Started - Kondor-JSON Documentation</title>
+        <title>Handling Errors with Outcome - Kondor-JSON Documentation</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#error-handling-in-kondor" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              Handling Errors with Outcome
             
           </span>
         </div>
@@ -200,11 +200,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../getting-started/" class="md-tabs__link">
         
   
   
@@ -221,10 +219,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../short-field-functions/" class="md-tabs__link">
           
   
@@ -366,32 +366,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Getting Started
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -402,131 +380,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-concept" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Core Concept
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-using-jany-with-the-kondor-dsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Example: Using JAny with the Kondor DSL
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧪 Usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-going-on" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 What's Going On?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧠 What&#39;s Going On?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-jany" class="md-nav__link">
-    <span class="md-ellipsis">
-      📦 What is JAny?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#defining-fields" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Defining Fields
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-fields-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧩 How Fields Work
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-bind-operator" class="md-nav__link">
-    <span class="md-ellipsis">
-      ➕ The Bind Operator
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 What's Next?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
-    <span class="md-ellipsis">
-      📘 Key Takeaways
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -535,24 +388,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -565,7 +423,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Basic Use
@@ -599,10 +457,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../outcome/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Handling Errors with Outcome
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -613,6 +493,119 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encoding-is-always-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encoding Is Always Safe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decoding-may-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoding May Fail
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is an Outcome?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is an Outcome?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-and-dirty-orthrow-and-ornull" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick and Dirty: .orThrow() and .orNull()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-outcome-explicitly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Outcome Explicitly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Outcome Explicitly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transform-and-recover" class="md-nav__link">
+    <span class="md-ellipsis">
+      transform and recover
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern Matching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#converting-to-other-result-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Converting to Other Result Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -836,82 +829,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#encoding-is-always-safe" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 Installation
+      Encoding Is Always Safe
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-concept" class="md-nav__link">
+  <a href="#decoding-may-fail" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Core Concept
+      Decoding May Fail
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-using-jany-with-the-kondor-dsl" class="md-nav__link">
+  <a href="#what-is-an-outcome" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ Example: Using JAny with the Kondor DSL
+      What Is an Outcome?
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧪 Usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-going-on" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 What's Going On?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧠 What&#39;s Going On?">
+    <nav class="md-nav" aria-label="What Is an Outcome?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-is-jany" class="md-nav__link">
+  <a href="#quick-and-dirty-orthrow-and-ornull" class="md-nav__link">
     <span class="md-ellipsis">
-      📦 What is JAny?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#defining-fields" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Defining Fields
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-fields-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧩 How Fields Work
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-bind-operator" class="md-nav__link">
-    <span class="md-ellipsis">
-      ➕ The Bind Operator
+      Quick and Dirty: .orThrow() and .orNull()
     </span>
   </a>
   
@@ -923,18 +871,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
+  <a href="#handling-outcome-explicitly" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 What's Next?
+      Handling Outcome Explicitly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Outcome Explicitly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transform-and-recover" class="md-nav__link">
+    <span class="md-ellipsis">
+      transform and recover
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern Matching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#converting-to-other-result-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Converting to Other Result Types
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      📘 Key Takeaways
+      Summary
     </span>
   </a>
   
@@ -959,102 +940,79 @@
   
 
 
-<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<p>Welcome to <strong>Kondor-JSON</strong>! This guide will help you get up and running quickly, and explain the <strong>core concepts</strong> that make Kondor-JSON unique.</p>
-<hr />
-<h2 id="installation">🔧 Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>Add Kondor-JSON to your <code>build.gradle.kts</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">dependencies</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">implementation</span><span class="p">(</span><span class="s">&quot;com.ubertob.kondor:kondor-json:&lt;latest-version&gt;&quot;</span><span class="p">)</span>
+<h1 id="error-handling-in-kondor">Error Handling in Kondor<a class="headerlink" href="#error-handling-in-kondor" title="Permanent link">&para;</a></h1>
+<p>Kondor aims to give you type-safe, declarative control over your JSON conversions — and that includes how errors are handled.</p>
+<h2 id="encoding-is-always-safe">Encoding Is Always Safe<a class="headerlink" href="#encoding-is-always-safe" title="Permanent link">&para;</a></h2>
+<p>When <strong>encoding</strong> an object to JSON using Kondor, you don't need to worry about runtime errors. The type system ensures that your object is valid for the converter you're using. So, <code>toJson(...)</code> always succeeds:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">toJson</span><span class="p">(</span><span class="n">User</span><span class="p">(</span><span class="s">&quot;alice@example.com&quot;</span><span class="p">))</span>
+</code></pre></div>
+<h2 id="decoding-may-fail">Decoding May Fail<a class="headerlink" href="#decoding-may-fail" title="Permanent link">&para;</a></h2>
+<p>However, when <strong>decoding</strong> JSON, things can go wrong — malformed input, missing fields, or incompatible types. For this, Kondor provides a safe and explicit way to handle errors: the <code>fromJson</code> function returns an <code>Outcome</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">result</span><span class="p">:</span><span class="w"> </span><span class="n">Outcome</span><span class="o">&lt;</span><span class="n">User</span><span class="p">,</span><span class="w"> </span><span class="n">JsonError</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="what-is-an-outcome">What Is an <code>Outcome</code>?<a class="headerlink" href="#what-is-an-outcome" title="Permanent link">&para;</a></h2>
+<p><code>Outcome</code> is a sealed type that represents either:</p>
+<ul>
+<li>a <code>Success&lt;T&gt;</code> containing the parsed object, or</li>
+<li>a <code>Failure&lt;E&gt;</code> containing a <code>JsonError</code>.</li>
+</ul>
+<p>This is similar to the <code>Either</code> type from languages like Scala or Haskell.</p>
+<h3 id="quick-and-dirty-orthrow-and-ornull">Quick and Dirty: <code>.orThrow()</code> and <code>.orNull()</code><a class="headerlink" href="#quick-and-dirty-orthrow-and-ornull" title="Permanent link">&para;</a></h3>
+<p>If you're sure your input is correct (e.g. in a test or simple script), you can get the decoded object directly using:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">user</span><span class="p">:</span><span class="w"> </span><span class="n">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">).</span><span class="na">orThrow</span><span class="p">()</span>
+</code></pre></div>
+<p>This will throw an exception if decoding fails — which may be fine in trusted or test environments.</p>
+<p>Alternatively, if you prefer a null fallback:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">user</span><span class="p">:</span><span class="w"> </span><span class="n">User? </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">).</span><span class="na">orNull</span><span class="p">()</span>
+</code></pre></div>
+<p>This will return <code>null</code> instead of throwing if decoding fails.</p>
+<h2 id="handling-outcome-explicitly">Handling Outcome Explicitly<a class="headerlink" href="#handling-outcome-explicitly" title="Permanent link">&para;</a></h2>
+<p>In more robust code, you should explicitly handle both success and failure. Kondor’s <code>Outcome</code> provides methods for this.</p>
+<h3 id="transform-and-recover"><code>transform</code> and <code>recover</code><a class="headerlink" href="#transform-and-recover" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use <code>transform</code> to map the success value:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">emailLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outcome</span><span class="p">.</span><span class="na">transform</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">user</span><span class="p">.</span><span class="na">email</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>Use <code>recover</code> to fix up an error (if there is one) and return a fallback success value:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">fallbackLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outcome</span><span class="p">.</span><span class="na">recover</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>A combination of the two covers most eventualities</li>
+</ul>
+<div class="highlight"><pre><span></span><code>val email = JUser.fromJson(json)
+              .transform { user -&gt; user.email }
+              .recover { &quot;default@somewhere.com&quot; }
+</code></pre></div>
+<h3 id="pattern-matching">Pattern Matching<a class="headerlink" href="#pattern-matching" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">is</span><span class="w"> </span><span class="n">Outcome</span><span class="p">.</span><span class="na">Success</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;User: </span><span class="si">${</span><span class="n">result</span><span class="p">.</span><span class="na">value</span><span class="si">}</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">is</span><span class="w"> </span><span class="n">Outcome</span><span class="p">.</span><span class="na">Failure</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Error: </span><span class="si">${</span><span class="n">result</span><span class="p">.</span><span class="na">reason</span><span class="si">}</span><span class="s">&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-<blockquote>
-<p>📦 Check <a href="https://search.maven.org/search?q=kondor-json">Maven Central</a> for the latest version.</p>
-</blockquote>
-<hr />
-<h2 id="core-concept">🎯 Core Concept<a class="headerlink" href="#core-concept" title="Permanent link">&para;</a></h2>
-<p>Unlike many serialization libraries, <strong>Kondor-JSON does not use intermediate DTOs</strong>. Instead, you define a <em>single, bidirectional converter</em> that maps your Kotlin type directly to and from JSON using <code>JConverter</code>.</p>
-<p>Kondor internally represents JSON objects using a type called <code>JsonNodeObject</code>. This is a tree-like structure that mirrors JSON syntax.</p>
-<p>Most of the time, <strong>you don’t need to interact with <code>JsonNodeObject</code> directly</strong> — the DSL handles it for you via field bindings and converters.</p>
-<p>Each converter is responsible for:</p>
-<ul>
-<li>Parsing a <code>JsonNodeObject</code> into your type (<code>deserializeOrThrow</code>)</li>
-<li>Serializing your type into a <code>JsonNodeObject</code> (default via DSL delegates, or override if needed)</li>
-</ul>
-<hr />
-<h2 id="example-using-jany-with-the-kondor-dsl">✨ Example: Using <code>JAny</code> with the Kondor DSL<a class="headerlink" href="#example-using-jany-with-the-kondor-dsl" title="Permanent link">&para;</a></h2>
-<p>Let’s define a <code>Person</code> class and create a converter by extending <code>JAny&lt;Person&gt;</code>. We'll use Kondor’s DSL-style field delegates to map each property, and take advantage of the <code>+</code> bind operator for clean deserialization.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nn">com.ubertob.kondor.json.*</span>
-<span class="k">import</span><span class="w"> </span><span class="nn">com.ubertob.kondor.json.jvalue.*</span>
+<h2 id="converting-to-other-result-types">Converting to Other Result Types<a class="headerlink" href="#converting-to-other-result-types" title="Permanent link">&para;</a></h2>
+<p>If you’re using a different result-handling library, such as <a href="https://github.com/fork-handles/forkhandles/blob/trunk/result4k">result4k</a>, you can easily convert an <code>Outcome&lt;T, E&gt;</code> into a <code>Result&lt;T, E&gt;</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nn">dev.forkhandles.result4k.Result</span>
+<span class="k">import</span><span class="w"> </span><span class="nn">dev.forkhandles.result4k.Success</span>
+<span class="k">import</span><span class="w"> </span><span class="nn">dev.forkhandles.result4k.Failure</span>
 
-<span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span>
-
-<span class="kd">object</span><span class="w"> </span><span class="nc">PersonConverter</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">JAny</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">name</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">num</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">age</span><span class="p">)</span>
-
-<span class="w">    </span><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">JsonNodeObject</span><span class="p">.</span><span class="nf">deserializeOrThrow</span><span class="p">():</span><span class="w"> </span><span class="n">Person</span><span class="w"> </span><span class="o">=</span>
-<span class="w">        </span><span class="n">Person</span><span class="p">(</span>
-<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">name</span><span class="p">,</span>
-<span class="w">            </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">age</span>
-<span class="w">        </span><span class="p">)</span>
+<span class="kd">fun</span><span class="w"> </span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">Outcome</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="o">&gt;</span><span class="p">.</span><span class="na">toResult4k</span><span class="p">():</span><span class="w"> </span><span class="n">Result</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">is</span><span class="w"> </span><span class="n">Outcome</span><span class="p">.</span><span class="na">Success</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">Success</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="w">    </span><span class="k">is</span><span class="w"> </span><span class="n">Outcome</span><span class="p">.</span><span class="na">Failure</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">Failure</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>This pattern offers a clean and expressive way to map fields.</p>
-<p>📝 <strong>Convention Note</strong>: While we’ve named our converter <code>PersonConverter</code> here, it’s common in Kondor projects to use a shorter name like <code>JPerson</code>. This saves typing without sacrificing clarity—but you’re free to choose whatever naming style fits your project best.</p>
-<hr />
-<h2 id="usage">🧪 Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">toJson</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">json</span><span class="p">)</span><span class="w"> </span><span class="c1">// {&quot;name&quot;:&quot;Alice&quot;,&quot;age&quot;:30}</span>
-
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">parsed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PersonConverter</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">parsed</span><span class="p">)</span><span class="w"> </span><span class="c1">// Person(name=Alice, age=30)</span>
-<span class="p">}</span>
+<p>Now you can interoperate seamlessly:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">result4k</span><span class="p">:</span><span class="w"> </span><span class="n">Result</span><span class="o">&lt;</span><span class="n">User</span><span class="p">,</span><span class="w"> </span><span class="n">JsonError</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">).</span><span class="na">toResult4k</span><span class="p">()</span>
 </code></pre></div>
-<hr />
-<h2 id="whats-going-on">🧠 What's Going On?<a class="headerlink" href="#whats-going-on" title="Permanent link">&para;</a></h2>
-<h3 id="what-is-jany">📦 What is JAny?<a class="headerlink" href="#what-is-jany" title="Permanent link">&para;</a></h3>
-<p><code>JAny&lt;T&gt;</code> is the top-level abstraction in the Kondor DSL for converting objects. It is the class you will use most often when working with Kondor.</p>
-<p>You define a subclass of <code>JAny</code> for each type you want to serialize, and use the DSL to declare how its properties map to and from JSON.</p>
-<p>This allows you to skip intermediate DTOs and instead declare the full serialization contract in one place.</p>
-<h3 id="defining-fields">🔑 Defining Fields<a class="headerlink" href="#defining-fields" title="Permanent link">&para;</a></h3>
-<p>We start by defining fields using the DSL delegates like <code>str</code> and <code>num</code>. These fields form the shape of the JSON representation.</p>
-<p>The <strong>names you give these fields in your converter directly become the property names</strong> in the serialized JSON object.</p>
-<p>For example, in the converter we define <code>val name by str(Person::name)</code>, so the resulting JSON will include a property named <code>"name"</code>. If you changed this to <code>val fullName by str(Person::name)</code>, the output JSON would have <code>"fullName"</code> instead.</p>
-<h3 id="how-fields-work">🧩 How Fields Work<a class="headerlink" href="#how-fields-work" title="Permanent link">&para;</a></h3>
-<p>This section explains how basic field mapping works using the DSL.</p>
-<p>The functions <code>str</code> and <code>num</code> are part of Kondor’s DSL for defining fields. They each take arguments that describe how to serialize and deserialize the values:</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>str(Person::name)</code> means "this field maps to a JSON string, and we get its value from the <code>name</code> property of the <code>Person</code> object."</li>
-<li><code>num(Person::age)</code> similarly maps the <code>age</code> field to a JSON number, pulling it from the <code>age</code> property of <code>Person</code>.</li>
+<li>Encoding with Kondor is always safe.</li>
+<li>Decoding uses <code>Outcome</code>, which is a functional way to deal with possible errors.</li>
+<li>You can throw, handle, or convert <code>Outcome</code> depending on your use case.</li>
 </ul>
-<p>In many cases, these mappings can be inferred automatically—for instance, Kotlin <code>String</code> to JSON string is a direct mapping. But we still need to tell Kondor <em>which</em> property of the object we are talking about—hence the use of property references like <code>Person::name</code>.</p>
-<p>We'll cover more complex examples later, including how to handle custom types, nullable fields, and schema evolution.</p>
-<h3 id="the-bind-operator">➕ The Bind Operator<a class="headerlink" href="#the-bind-operator" title="Permanent link">&para;</a></h3>
-<p>We use the <code>+</code> operator (also known as the <em>bind operator</em>) to extract values from the <code>JsonNodeObject</code>.</p>
-<p>For example:</p>
-<div class="highlight"><pre><span></span><code><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="n">name</span>
-</code></pre></div>
-<p>This line binds the value of the JSON <code>"name"</code> field (as defined by the delegate) into the <code>name</code> property of the <code>Person</code> object.</p>
-<h2 id="whats-next">📌 What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p>Once you're comfortable with this approach, explore more advanced features:</p>
-<ul>
-<li>💻 <a href="./">Converters Overview</a> – an overview understanding how to work with Kondor converters</li>
-<li>🔁 <a href="../versioned-converter/">Versioning the JSON</a> – for evolving schemas</li>
-<li>🔤 <a href="../tiny-types/">Tiny Types (Value Objects)</a> – for handling object you want to represent as a string or number</li>
-<li>🔤 <a href="../enums-and-sealed/">Enums and Sealed Classes</a> – for working with enums and sealed classes</li>
-<li>🛠 <a href="../short-field-functions/">Field Functions</a> – helper functions for defining fields in Kondor converters</li>
-<li>🧳 <a href="sealed-classes.md">Sealed Classes and Polymorphic JSON</a> – handling polymorphic JSON with sealed classes</li>
-</ul>
-<hr />
-<h2 id="key-takeaways">📘 Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
-<ul>
-<li>🚫 Kondor doesn't rely on intermediate DTOs. Instead, you define mapping functions that convert to and from JSON directly.</li>
-<li>🤖 Much of the mapping logic is inferred automatically by the Kondor DSL.</li>
-<li>📦 If you're unsure what kind of converter to use, <code>JAny</code> is likely the one you need—it's the most commonly used abstraction in the DSL.</li>
-</ul>
+<p>Kondor doesn’t just help you build safe JSON codecs — it also helps you <strong>fail safely</strong>.</p>
 
 
 

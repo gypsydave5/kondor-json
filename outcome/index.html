@@ -982,9 +982,9 @@
 <ul>
 <li>A combination of the two covers most eventualities</li>
 </ul>
-<div class="highlight"><pre><span></span><code>val email = JUser.fromJson(json)
-              .transform { user -&gt; user.email }
-              .recover { &quot;default@somewhere.com&quot; }
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
+<span class="w">              </span><span class="p">.</span><span class="na">transform</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">user</span><span class="p">.</span><span class="na">email</span><span class="w"> </span><span class="p">}</span>
+<span class="w">              </span><span class="p">.</span><span class="na">recover</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;default@somewhere.com&quot;</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div>
 <h3 id="pattern-matching">Pattern Matching<a class="headerlink" href="#pattern-matching" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JUser</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>

@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../versioned-converter/">
+        <link rel="prev" href="../getting-started/">
       
+      
+        <link rel="next" href="../jany/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>FAQ - Kondor-JSON Documentation</title>
+        <title>Core Concept - Kondor-JSON Documentation</title>
       
     
     
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#why-does-kondor-say-it-doesnt-use-reflection-even-though-it-uses-reflection-to-get-the-field-names" class="md-skip">
+        <a href="#core-concept" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FAQ
+              Core Concept
             
           </span>
         </div>
@@ -217,9 +219,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../core-concept/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -295,11 +299,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
         
   
   
@@ -405,10 +407,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../core-concept/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Core Concept
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -419,6 +443,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -706,30 +759,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    FAQ
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -740,33 +773,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-does-kondor-say-it-doesnt-use-reflection-even-though-it-uses-reflection-to-get-the-field-names" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why does Kondor say it doesn't use reflection, even though it uses reflection to get the field names?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -788,6 +794,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -796,9 +804,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-does-kondor-say-it-doesnt-use-reflection-even-though-it-uses-reflection-to-get-the-field-names" class="md-nav__link">
+  <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Why does Kondor say it doesn't use reflection, even though it uses reflection to get the field names?
+      📘 Key Takeaways
     </span>
   </a>
   
@@ -823,13 +831,22 @@
   
 
 
-  <h1>FAQ</h1>
-
-<h3 id="why-does-kondor-say-it-doesnt-use-reflection-even-though-it-uses-reflection-to-get-the-field-names">Why does Kondor say it doesn't use reflection, even though it uses reflection to get the field names?<a class="headerlink" href="#why-does-kondor-say-it-doesnt-use-reflection-even-though-it-uses-reflection-to-get-the-field-names" title="Permanent link">&para;</a></h3>
-<p>In Kondor, reflection is only used at the beginning when building the field mappings — specifically to capture the field names based on the Kotlin property references. However, once the field names are captured, Kondor operates without needing reflection during the actual encoding or decoding of JSON data.</p>
-<p>This is an important distinction: while reflection is used to retrieve information about the field (e.g., the property name), it is not required during the conversion process itself. Instead, Kondor uses a set of pre-defined field mappings and converters, allowing it to operate efficiently without runtime reflection overhead when processing JSON.</p>
-<p>Because of this approach, Kondor is able to offer the flexibility of reflection-based configuration (for capturing field names) while avoiding the performance hit that would come with using reflection during the actual JSON serialization and deserialization process.</p>
-<p>This results in a highly efficient system that doesn't carry the usual reflection-based runtime cost, which is especially beneficial for performance-sensitive applications.</p>
+<h1 id="core-concept">Core Concept<a class="headerlink" href="#core-concept" title="Permanent link">&para;</a></h1>
+<p>Unlike many serialization libraries, Kondor-JSON does not use intermediate DTOs. Instead, you define a single, bidirectional converter that maps your Kotlin type directly to and from JSON using <code>JConverter</code>.</p>
+<p>Kondor internally represents JSON using a type called <code>JsonNode</code>. This is a tree-like structure that mirrors JSON syntax.</p>
+<p>Most of the time, you don’t need to interact with a <code>JsonNode</code> directly — the DSL handles it for you via field bindings and converters.</p>
+<p>Each converter is responsible for:</p>
+<ul>
+<li>Parsing a <code>JsonNode</code> into your type</li>
+<li>Serializing your type into a <code>JsonNode</code></li>
+</ul>
+<p>For the most part, this will mean converting objects, represented as JSON in Kondor as <code>JsonNodeObject</code>. We build an object converter for a type <code>T</code> by inheriting from <code>JAny&lt;T&gt;</code>.</p>
+<h2 id="key-takeaways">📘 Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<ul>
+<li>🚫 Kondor doesn't rely on intermediate DTOs. Instead, you define mapping functions that convert to and from JSON directly.</li>
+<li>🤖 Much of the mapping logic is inferred automatically by the Kondor DSL.</li>
+<li>📦 If you're unsure what kind of converter to use, <code>JAny</code> is likely the one you need—it's the most commonly used abstraction in the DSL.</li>
+</ul>
 
 
 

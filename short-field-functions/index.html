@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../getting-started/">
+        <link rel="prev" href="../jany/">
       
       
         <link rel="next" href="../outcome/">
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#field-functions" class="md-skip">
+        <a href="#adding-a-field" class="md-skip">
           Skip to content
         </a>
       
@@ -219,13 +219,32 @@
   
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../core-concept/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Core Concept
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
     
   
   
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../jany/" class="md-tabs__link">
           
   
   
@@ -388,6 +407,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../core-concept/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Concept
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -407,10 +448,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -423,12 +464,35 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Basic Use
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jany/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JAny
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -487,6 +551,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-general-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The General Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#str" class="md-nav__link">
     <span class="md-ellipsis">
       str
@@ -494,8 +577,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#num" class="md-nav__link">
     <span class="md-ellipsis">
       num
@@ -503,8 +586,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#bool" class="md-nav__link">
     <span class="md-ellipsis">
       bool
@@ -512,8 +595,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#array" class="md-nav__link">
     <span class="md-ellipsis">
       array
@@ -521,13 +604,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#obj" class="md-nav__link">
     <span class="md-ellipsis">
       obj
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -537,6 +625,54 @@
       Summary Table
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Summary Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-more-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      One More: flatten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-faqs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field FAQs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field FAQs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-are-we-using-the-by-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why are we using the by Keyword?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-if-the-json-property-name-isnt-a-valid-kotlin-property-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      What if the JSON Property Name Isn't a Valid Kotlin Property Name?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -606,10 +742,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -622,8 +758,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Advanced
           </label>
@@ -799,6 +935,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-general-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      The General Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#str" class="md-nav__link">
     <span class="md-ellipsis">
       str
@@ -806,8 +961,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#num" class="md-nav__link">
     <span class="md-ellipsis">
       num
@@ -815,8 +970,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#bool" class="md-nav__link">
     <span class="md-ellipsis">
       bool
@@ -824,8 +979,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#array" class="md-nav__link">
     <span class="md-ellipsis">
       array
@@ -833,13 +988,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#obj" class="md-nav__link">
     <span class="md-ellipsis">
       obj
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -849,6 +1009,54 @@
       Summary Table
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Summary Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-more-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      One More: flatten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-faqs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field FAQs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field FAQs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-are-we-using-the-by-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why are we using the by Keyword?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-if-the-json-property-name-isnt-a-valid-kotlin-property-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      What if the JSON Property Name Isn't a Valid Kotlin Property Name?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -880,14 +1088,17 @@
   
 
 
-<h1 id="field-functions">Field Functions<a class="headerlink" href="#field-functions" title="Permanent link">&para;</a></h1>
-<p>When defining a converter in Kondor using <code>JAny</code>, you'll typically use one of a set of helper functions to define each field.</p>
-<p>These helper functions are named after the JSON type you're mapping to – like <code>str</code> for strings, <code>num</code> for numbers, and so on.</p>
-<p>Each function takes at least one argument: a property accessor (like <code>User::email</code>) that tells Kondor which field to serialize.</p>
-<p>Optionally, you can provide a converter as the first argument — for example, if you're wrapping a field in a tiny type or using a custom format. This gives you flexibility to encode domain-specific types or legacy formats cleanly.</p>
+<h1 id="adding-a-field">Adding A Field<a class="headerlink" href="#adding-a-field" title="Permanent link">&para;</a></h1>
+<p>In Kondor, adding a field to a converter is generally done by using a set of helper functions that correspond to the basic JSON types. Each of these functions returns a <code>FieldConverter</code>, which can then be delegated to using Kotlin’s <code>by</code> keyword.</p>
+<h2 id="the-general-pattern">The General Pattern<a class="headerlink" href="#the-general-pattern" title="Permanent link">&para;</a></h2>
+<p>Each field in a <code>JAny</code> converter is typically defined using a short function named after the JSON type you're targeting. These functions take an accessor function as their main argument—usually a Kotlin property reference like <code>User::email</code>. Optionally, you can also pass a converter as a second argument, which will be used to handle conversion of the field’s value.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">email</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="n">email</span><span class="p">)</span><span class="w"> </span><span class="c1">// simple string field</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">nickname</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">JNickname</span><span class="p">,</span><span class="w"> </span><span class="n">User</span><span class="o">::</span><span class="n">nickname</span><span class="p">)</span><span class="w"> </span><span class="c1">// tiny type or custom converter</span>
+</code></pre></div>
+<h2 id="field-functions">Field Functions<a class="headerlink" href="#field-functions" title="Permanent link">&para;</a></h2>
 <p>Here are the most commonly used field functions:</p>
 <hr />
-<h2 id="str"><code>str</code><a class="headerlink" href="#str" title="Permanent link">&para;</a></h2>
+<h3 id="str"><code>str</code><a class="headerlink" href="#str" title="Permanent link">&para;</a></h3>
 <p>Use <code>str</code> to map a Kotlin <code>String</code> property to a JSON string field.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
@@ -895,7 +1106,7 @@
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">email</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">JEmail</span><span class="p">,</span><span class="w"> </span><span class="n">User</span><span class="o">::</span><span class="n">email</span><span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="num"><code>num</code><a class="headerlink" href="#num" title="Permanent link">&para;</a></h2>
+<h3 id="num"><code>num</code><a class="headerlink" href="#num" title="Permanent link">&para;</a></h3>
 <p>Use <code>num</code> to map numeric Kotlin types (<code>Int</code>, <code>Long</code>, <code>Double</code>, etc.) to JSON number fields.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">num</span><span class="p">(</span><span class="n">Person</span><span class="o">::</span><span class="n">age</span><span class="p">)</span>
 </code></pre></div>
@@ -903,7 +1114,7 @@
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">score</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">num</span><span class="p">(</span><span class="n">JScore</span><span class="p">,</span><span class="w"> </span><span class="n">Player</span><span class="o">::</span><span class="n">score</span><span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="bool"><code>bool</code><a class="headerlink" href="#bool" title="Permanent link">&para;</a></h2>
+<h3 id="bool"><code>bool</code><a class="headerlink" href="#bool" title="Permanent link">&para;</a></h3>
 <p>Use <code>bool</code> to map a Kotlin <code>Boolean</code> property to a JSON boolean field.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">isActive</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">bool</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="n">isActive</span><span class="p">)</span>
 </code></pre></div>
@@ -911,19 +1122,18 @@
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">termsAccepted</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">bool</span><span class="p">(</span><span class="n">JTermsAccepted</span><span class="p">,</span><span class="w"> </span><span class="n">SignupForm</span><span class="o">::</span><span class="n">termsAccepted</span><span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="array"><code>array</code><a class="headerlink" href="#array" title="Permanent link">&para;</a></h2>
+<h3 id="array"><code>array</code><a class="headerlink" href="#array" title="Permanent link">&para;</a></h3>
 <p>Use <code>array</code> to map collections (like <code>List</code> or <code>Set</code>) of other types to JSON arrays. You'll need to provide a converter for the element type.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">tags</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">array</span><span class="p">(</span><span class="n">JString</span><span class="p">,</span><span class="w"> </span><span class="n">Article</span><span class="o">::</span><span class="n">tags</span><span class="p">)</span>
 </code></pre></div>
 <p>This works for both <code>List&lt;T&gt;</code> and <code>Set&lt;T&gt;</code>.</p>
 <hr />
-<h2 id="obj"><code>obj</code><a class="headerlink" href="#obj" title="Permanent link">&para;</a></h2>
+<h3 id="obj"><code>obj</code><a class="headerlink" href="#obj" title="Permanent link">&para;</a></h3>
 <p>Finally, we use <code>obj</code> to map a property that is another object (i.e. a nested data class) to a JSON object field. You'll need to provide a converter for the nested type.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">address</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">obj</span><span class="p">(</span><span class="n">JAddress</span><span class="p">,</span><span class="w"> </span><span class="n">User</span><span class="o">::</span><span class="n">address</span><span class="p">)</span>
 </code></pre></div>
 <hr />
 <p>These field helper functions form the foundation of how you describe the structure of your JSON in Kondor. With just a few of these, you can map most of your data models clearly and concisely.</p>
-<p>There’s also one more field builder function available: <code>flatten</code>. This is used when you need to inline or "flatten" the fields of a nested object directly into the parent object’s JSON structure. We’ll look at how and when to use this in a separate part of the documentation.</p>
 <hr />
 <h2 id="summary-table">Summary Table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
 <table>
@@ -968,6 +1178,21 @@
 </tr>
 </tbody>
 </table>
+<hr />
+<h3 id="one-more-flatten">One More: <code>flatten</code><a class="headerlink" href="#one-more-flatten" title="Permanent link">&para;</a></h3>
+<p>There’s one more function you can use when adding fields: <code>flatten</code>. This is used to flatten the fields of a nested object into the parent JSON object. We’ll explore this in more detail in a separate guide on <a href="../flatten/">Flattening Fields</a>.</p>
+<hr />
+<h2 id="field-faqs">Field FAQs<a class="headerlink" href="#field-faqs" title="Permanent link">&para;</a></h2>
+<h3 id="why-are-we-using-the-by-keyword">Why are we using the <code>by</code> Keyword?<a class="headerlink" href="#why-are-we-using-the-by-keyword" title="Permanent link">&para;</a></h3>
+<p>The DSL relies on Kotlin's <code>by</code> keyword for delegation. Each field declaration like <code>val name by str(Person::name)</code> uses this keyword to assign the result of the <code>str()</code> function to a <a href="https://kotlinlang.org/docs/delegated-properties.html">delegated property</a>.</p>
+<p>In this context, <code>str(Person::name)</code> returns a converter for that field, and the DSL uses delegation to register this converter with the containing <code>JAny</code> object.</p>
+<p>Importantly, this delegation also gives the converter access to the <em>name of the property itself</em>. Kondor uses this information when serializing and deserializing to match the Kotlin property name with the corresponding field name in the JSON object.</p>
+<p>This leads us to the next question...</p>
+<h3 id="what-if-the-json-property-name-isnt-a-valid-kotlin-property-name">What if the JSON Property Name Isn't a Valid Kotlin Property Name?<a class="headerlink" href="#what-if-the-json-property-name-isnt-a-valid-kotlin-property-name" title="Permanent link">&para;</a></h3>
+<p>Sometimes a field in the JSON uses characters or formats that aren't valid Kotlin property names—such as <code>"snake_case"</code>, <code>"kebab-case"</code>, or names with symbols. In these cases, you can still represent them in Kotlin by using <strong>backticks</strong> when declaring the property in your data class:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">`cover-letter`</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">User</span><span class="o">::</span><span class="n">coverLetter</span><span class="p">)</span>
+</code></pre></div>
+<p>and we can carry on as usual.</p>
 <hr />
 <h2 id="whats-next">📌 What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <p>Explore more of Kondor’s features:</p>

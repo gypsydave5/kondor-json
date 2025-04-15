@@ -6,7 +6,9 @@ site_dir: site
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
+  - Core Concept: core-concept.md
   - Basic Use:
+      - JAny: jany.md
       - Adding Fields: short-field-functions.md
       - Error Handling: outcome.md
   - Advanced:

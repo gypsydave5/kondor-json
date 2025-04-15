@@ -43,8 +43,6 @@ fun main() {
 
 Explore more of Kondor’s features:
 
-- 💻 [Converters Overview](getting-started.md) – an overview understanding how to work with Kondor converters
-- 🔁 [Versioning the JSON](versioned-converter.md) – for evolving schemas
-- 🔤 [Tiny Types (Value Objects)](tiny-types.md) – for handling object you want to represent as a string or number
-- 🔤 [Enums and Sealed Classes](enums-and-sealed.md) – for working with enums and sealed classes
-- 🛠 [Field Functions](short-field-functions.md) – helper functions for defining fields in Kondor converters
+- 💻 [Getting Started](getting-started.md) – installing Kondor
+- 🛠 [Using JAny](jany.md) - the general converter for objects
+- 🔤 [Adding Fields](short-field-functions.md) - for adding new fields to an object converter
